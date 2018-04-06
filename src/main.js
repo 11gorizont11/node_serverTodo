@@ -19,8 +19,12 @@ app.use(cookieParser());
  * Routes
  */
 app.get('/api', (req, res) => res.send('Hello World!'));
+app.get('/favicon.ico', (req, res) => {
+  res.sendStatus(204);
+});
 
-// catch all errors here
+// errors hangling
+
 app.use((err, req, res) => {
   const { isBoom } = err;
   if (err.message !== 'Unauthorized') {
@@ -38,3 +42,5 @@ app.listen(ServerConfig.PORT, () =>
     }!`
   )
 );
+
+export default app;

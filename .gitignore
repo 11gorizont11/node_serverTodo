@@ -4,6 +4,12 @@
 
 #Dependencies
 node_modules
+# tests coverage
+/coverage
+
+
+# editor
+.vscode
 
 # Logs
 logs

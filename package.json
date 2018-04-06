@@ -6,6 +6,7 @@
   "scripts": {
     "start": "rimraf ./dist && babel -d ./dist ./src -s && node dist/main.js",
     "dev": "node index.js",
+    "test": "jest --coverage",
     "lint:js": "eslint ./src",
     "lint-staged": "lint-staged"
   },
@@ -26,10 +27,7 @@
   },
   "eslintConfig": {
     "root": true,
-    "extends": [
-      "airbnb-base",
-      "prettier"
-    ],
+    "extends": ["airbnb-base", "prettier"],
     "env": {
       "node": true
     }
@@ -46,14 +44,15 @@
       ]
     ]
   },
-  "pre-commit": "lint-staged",
   "devDependencies": {
     "babel-register": "^6.26.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.10.0",
+    "jest": "^22.4.3",
     "lint-staged": "^7.0.4",
-    "pre-commit": "^1.2.2"
+    "pre-commit": "^1.2.2",
+    "supertest": "^3.0.0"
   }
 }
