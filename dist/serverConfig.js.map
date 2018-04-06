@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/serverConfig.js"],"names":["PORT","process","env","ENV","NODE_ENV"],"mappings":";;;;;kBAAe;AACbA,QAAMC,QAAQC,GAAR,CAAYF,IAAZ,IAAoB,MADb;AAEbG,OAAKF,QAAQC,GAAR,CAAYE,QAAZ,IAAwB;AAFhB,C","file":"serverConfig.js","sourcesContent":["export default {\n  PORT: process.env.PORT || '3030',\n  ENV: process.env.NODE_ENV || 'development'\n};\n"]}
